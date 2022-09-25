@@ -25,7 +25,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.unsplash.com/photo-1452423668729-43a98052d3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+             background-image: url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -56,8 +56,13 @@ font="Serif"
 #
 # base="dark"
 # primaryColor="purple"
-st.title("Poem Generator")
+#st.title("Khayal- Writing Tool ")
+st.markdown("<h1 style='text-align: center; color: white;'>Khayal- Writing Tool</h1>", unsafe_allow_html=True)
+st.write("This writing tool currently has two applications within it, poem generation and text summarizer."
+         " To summarize text you can use 'Summarizer from the sidebar. ")
+st.header("Poem Generation")
 st.markdown("This is a poem generator app. you can use it to create poems by providing text to it.")
+
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = GPT2Tokenizer.from_pretrained("Silvers-145/khayal-generate")
