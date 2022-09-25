@@ -2,8 +2,8 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import streamlit as st
 import torch
 # import yake
-from rake_nltk import Rake
-rake_nltk_var = Rake()
+# from rake_nltk import Rake
+# rake_nltk_var = Rake()
 
 
 st.set_page_config(
