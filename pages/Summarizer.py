@@ -13,7 +13,7 @@ from string import punctuation
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
-
+nltk.download('punkt')
 def add_bg_from_url():
   st.markdown(
     f"""
