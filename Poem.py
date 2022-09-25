@@ -7,9 +7,9 @@ import torch
 
 
 st.set_page_config(
-    page_title="Khayal App"
+    page_title="Khayal-Writing Tool App"
 )
-st.sidebar.success("Select a page")
+st.sidebar.success("Select an App")
 #
 # page_bg_img = """
 # <style>
@@ -44,6 +44,11 @@ def add_bg_from_url():
 
 add_bg_from_url()
 
+#primaryColor="#F63366"
+#backgroundColor="#FFFFFF"
+#secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="Serif"
 
 
 
